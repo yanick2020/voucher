@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ff007f,#e60087,#d1007b);
+    min-height:100vh;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo span{
+    color:white;
+    font-size:24px;
+    font-weight:700;
+}
+
+.logo .pink{
+    color:#fff;
+    font-weight:800;
+}
+
+/*  TITRE */
+
+.hero{
+    text-align:center;
+    padding:45px 20px 30px;
+}
+
+.hero h1{
+    color:white;
+    font-size:56px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+/*  CARTE  */
+
+.card{
+
+    width:min(92%,1200px);
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:50px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.18);
+
+}
+
+/*  GAUCHE  */
+
+.left{
+    flex:1;
+}
+
+.left h2{
+
+    color:#148b2d;
+
+    font-size:30px;
+
+    margin-bottom:40px;
+
+}
+
+.info p{
+
+    font-size:26px;
+
+    margin-bottom:28px;
+
+    line-height:1.5;
+
+    word-break:break-word;
+
+}
+
+.green{
+
+    color:#148b2d;
+
+    font-weight:700;
+
+}
+
+/*  DROITE  */
+
+.right{
+
+    width:380px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.right button{
+
+    background:linear-gradient(135deg,#8c2be2,#6f2cd8);
+
+    color:white;
+
+    border:none;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+    font-weight:600;
+
+}
+
+.right button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
+
+}
+
+/* FOOTER  */
+
+footer{
+
+    text-align:center;
+
+    color:white;
+
+    margin:35px 20px;
+
+    font-size:16px;
+
+}
+
+/*  TABLETTE  */
+
+@media (max-width:992px){
+
+    .card{
+
+        flex-direction:column;
+
+        padding:35px;
+
+        gap:35px;
+
+    }
+
+    .right{
+
+        width:100%;
+
+    }
+
+    .right button{
+
+        width:100%;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .info p{
+
+        font-size:22px;
+
+    }
+
+}
+
+/* TELEPHONE */
+
+@media (max-width:768px){
+
+    header{
+
+        padding:15px;
+
+    }
+
+    .logo img{
+
+        width:45px;
+
+    }
+
+    .logo span{
+
+        font-size:18px;
+
+    }
+
+    .hero{
+
+        padding:30px 15px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .card{
+
+        width:95%;
+
+        padding:25px 20px;
+
+        border-radius:18px;
+
+    }
+
+    .left h2{
+
+        font-size:24px;
+
+        text-align:center;
+
+    }
+
+    .info p{
+
+        font-size:18px;
+
+        margin-bottom:18px;
+
+    }
+
+    .right{
+
+        width:100%;
+
+    }
+
+    .right button{
+
+        width:100%;
+
+        padding:16px;
+
+        font-size:18px;
+
+    }
+
+    footer{
+
+        font-size:14px;
+
+    }
+
+}
+
+/* PETITS TELEPHONES  */
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .logo span{
+
+        font-size:16px;
+
+    }
+
+    .card{
+
+        padding:18px;
+
+    }
+
+    .left h2{
+
+        font-size:22px;
+
+    }
+
+    .info p{
+
+        font-size:16px;
+
+    }
+
+    .right button{
+
+        font-size:17px;
+
+        padding:15px;
+
+    }
+
+}
