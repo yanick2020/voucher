@@ -171,13 +171,9 @@ footer {
 ========================= */
 
 .verification-card {
-    /* Largeur augmentée uniquement */
     width: 440px;
     max-width: 92%;
-
-    /* Même hauteur générale */
     margin: 45px auto 35px;
-
     background: #ffffff;
     border-radius: 6px;
     overflow: hidden;
@@ -247,8 +243,6 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-    /* Espacement conservé */
     margin-top: 22px;
     margin-bottom: 35px;
 }
@@ -458,124 +452,145 @@ footer {
 @media (max-width: 768px) {
 
     .topbar {
-        height: 80px;
-        padding: 0 20px;
+        height: 75px;
+        padding: 0 15px;
     }
 
     body {
-        padding-top: 80px;
+        padding-top: 75px;
+    }
+
+    /* Marque MyBeauty adaptée au téléphone */
+    .mybeauty-brand {
+        top: 8px;
+        left: 18px;
+    }
+
+    .mybeauty-name {
+        font-size: 34px;
+        letter-spacing: -1.5px;
+    }
+
+    .mybeauty-tagline {
+        margin-top: 3px;
+        font-size: 9px;
     }
 
     .logo-brand {
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand {
+        gap: 10px;
     }
 
     .brand span,
     .contact-text {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .hero {
-        padding-top: 50px;
+        padding-top: 40px;
     }
 
     .hero h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .hero-description {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.5;
     }
 
     .hero-info {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .main-button {
         width: 100%;
-        max-width: 340px;
-        padding: 18px;
-        font-size: 22px;
+        max-width: 320px;
+        padding: 16px;
+        font-size: 20px;
     }
 
     .verification-card {
         width: 395px;
-        max-width: 90%;
-        margin: 30px auto 30px;
-        padding: 8px;
+        max-width: 92%;
+        margin: 25px auto 25px;
+        padding: 6px;
     }
 
     .verification-body {
-        padding: 15px 15px 20px;
+        padding: 13px 13px 18px;
     }
 
     .verification-card h2 {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .verification-text {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 12px;
-    }
-
-    .shield-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
+        font-size: 15px;
+        line-height: 1.45;
         margin-bottom: 10px;
     }
 
+    .shield-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 28px;
+        margin-bottom: 9px;
+    }
+
     .code-group {
-        gap: 4px;
-        margin: 8px auto;
+        gap: 3px;
+        margin: 7px auto;
     }
 
     .code-input {
-        width: 62px;
-        height: 44px;
-        font-size: 20px;
+        width: 60px;
+        height: 42px;
+        font-size: 19px;
     }
 
     .separator {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .verification-card button {
-        width: 110px;
-        height: 37px;
-        font-size: 15px;
+        width: 108px;
+        height: 36px;
+        font-size: 14px;
         margin-top: 3px;
     }
 
     .recaptcha-container {
-        transform: scale(.68);
-        height: 52px;
+        transform: scale(.64);
+        height: 49px;
     }
 
     .help-text {
-        margin-top: 10px;
-        font-size: 14px;
+        margin-top: 9px;
+        font-size: 13px;
     }
 
     .back-button {
-        margin-top: 7px;
+        margin-top: 6px;
     }
 
     #verificationForm {
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-top: 18px;
+        margin-bottom: 25px;
     }
 
+    /* Footer réduit */
     .verification-footer {
-        padding: 4px 6px;
+        padding: 3px 5px;
     }
 
     .footer-text,
     .verification-footer p {
-        font-size: 9px;
+        font-size: 8px;
     }
 }
 
@@ -586,34 +601,51 @@ footer {
 @media (max-width: 600px) {
 
     .topbar {
-        height: 75px;
+        height: 68px;
         padding: 0 10px;
     }
 
     body {
-        padding-top: 75px;
+        padding-top: 68px;
+    }
+
+    /* MyBeauty proche de la disposition ordinateur */
+    .mybeauty-brand {
+        top: 7px;
+        left: 15px;
+    }
+
+    .mybeauty-name {
+        font-size: 30px;
+        letter-spacing: -1px;
+    }
+
+    .mybeauty-tagline {
+        margin-top: 2px;
+        font-size: 8px;
+        line-height: 1.1;
     }
 
     .brand {
-        gap: 8px;
-        max-width: 60%;
+        gap: 7px;
+        max-width: 58%;
     }
 
     .logo-brand {
-        width: 42px;
-        height: 42px;
+        width: 38px;
+        height: 38px;
     }
 
     .brand span {
-        font-size: 17px !important;
+        font-size: 15px !important;
         white-space: normal;
-        line-height: 1.2;
+        line-height: 1.15;
     }
 
     .contact-text {
         display: block !important;
         color: #ffffff !important;
-        font-size: 17px !important;
+        font-size: 15px !important;
         font-weight: 700;
         white-space: nowrap;
         position: relative;
@@ -624,54 +656,95 @@ footer {
         display: none;
     }
 
+    .hero {
+        padding-top: 30px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .hero-info {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Bouton consulter réduit */
+    .btn-consulter {
+        margin-top: 25px;
+        padding: 13px 30px;
+        border-radius: 40px;
+        font-size: 18px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    }
+
     .verification-card {
         width: 375px;
         max-width: 94%;
-        margin: 25px auto 28px;
-        padding: 5px;
-    }
-
-    .verification-body {
-        padding: 10px 10px 18px;
-    }
-
-    .verification-header {
-        padding: 5px 10px;
-    }
-
-    .verification-header h2 {
-        margin: 5px;
-        font-size: 15px;
-    }
-
-    .verification-text {
-        font-size: 14px;
-        margin-bottom: 8px;
-    }
-
-    .code-input {
-        width: 58px;
-        height: 42px;
-    }
-
-    .recaptcha-container {
-        transform: scale(.63);
-        height: 48px;
-    }
-
-    #verificationForm {
-        margin-top: 18px;
-        margin-bottom: 28px;
-    }
-
-    /* Footer inchangé */
-    .verification-footer {
+        margin: 22px auto 22px;
         padding: 4px;
     }
 
-    .footer-text,
+    .verification-body {
+        padding: 9px 9px 15px;
+    }
+
+    .verification-header {
+        padding: 4px 8px;
+    }
+
+    .verification-header h2 {
+        margin: 4px;
+        font-size: 14px;
+    }
+
+    .verification-text {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+
+    .code-input {
+        width: 57px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .separator {
+        font-size: 20px;
+    }
+
+    .recaptcha-container {
+        transform: scale(.58);
+        height: 44px;
+    }
+
+    #verificationForm {
+        margin-top: 16px;
+        margin-bottom: 22px;
+    }
+
+    /* Footer plus petit */
+    .verification-footer {
+        padding: 3px 4px;
+    }
+
+    .footer-text {
+        font-size: 7px;
+        margin-bottom: 1px;
+    }
+
+    .footer-text span {
+        margin: 0 2px;
+    }
+
     .verification-footer p {
-        font-size: 8px;
+        font-size: 7px;
     }
 }
 
@@ -681,53 +754,109 @@ footer {
 
 @media (max-width: 480px) {
 
+    .topbar {
+        height: 65px;
+        padding: 0 8px;
+    }
+
+    body {
+        padding-top: 65px;
+    }
+
+    /* MyBeauty encore légèrement plus petit */
+    .mybeauty-brand {
+        top: 6px;
+        left: 12px;
+    }
+
+    .mybeauty-name {
+        font-size: 27px;
+        letter-spacing: -1px;
+    }
+
+    .mybeauty-tagline {
+        font-size: 7px;
+        margin-top: 2px;
+    }
+
+    .brand {
+        gap: 5px;
+        max-width: 55%;
+    }
+
+    .logo-brand {
+        width: 34px;
+        height: 34px;
+    }
+
+    .brand span {
+        font-size: 14px !important;
+    }
+
+    .contact-text {
+        font-size: 14px !important;
+    }
+
+    .hero {
+        padding-top: 25px;
+    }
+
     .hero h2 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .hero-description {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .hero-info {
+        font-size: 15px;
+    }
+
+    /* Bouton consulter encore réduit */
+    .btn-consulter {
+        margin-top: 20px;
+        padding: 11px 25px;
         font-size: 16px;
-    }
-
-    .code-input {
-        width: 54px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    .separator {
-        font-size: 20px;
+        border-radius: 35px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, .15);
     }
 
     .verification-card {
         width: 350px;
         max-width: 95%;
-        margin-top: 22px;
-        margin-bottom: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .verification-card button {
-        width: 105px;
-        height: 35px;
-        font-size: 14px;
+        width: 100px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .code-input {
+        width: 52px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .separator {
+        font-size: 18px;
     }
 
     #verificationForm {
-        margin-top: 18px;
-        margin-bottom: 25px;
+        margin-top: 16px;
+        margin-bottom: 20px;
     }
 
-    /* Footer inchangé */
+    /* Footer petit */
     .verification-footer {
-        padding: 3px 5px;
+        padding: 2px 4px;
     }
 
     .footer-text,
     .verification-footer p {
-        font-size: 8px;
+        font-size: 7px;
     }
 }
