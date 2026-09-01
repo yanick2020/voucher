@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding-top: 110px;
+    padding-top: 50px;
 }
 
 .home-page {
