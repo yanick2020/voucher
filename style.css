@@ -243,8 +243,10 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    /* Même espace en haut et en bas */
     margin-top: 22px;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
 }
 
 .recaptcha-container {
@@ -436,8 +438,8 @@ footer {
     }
 
     #verificationForm {
-        margin-top: 22px;
-        margin-bottom: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .verification-footer {
@@ -452,145 +454,134 @@ footer {
 @media (max-width: 768px) {
 
     .topbar {
-        height: 75px;
-        padding: 0 15px;
+        height: 80px;
+        padding: 0 20px;
     }
 
     body {
-        padding-top: 75px;
-    }
-
-    /* Marque MyBeauty adaptée au téléphone */
-    .mybeauty-brand {
-        top: 8px;
-        left: 18px;
-    }
-
-    .mybeauty-name {
-        font-size: 34px;
-        letter-spacing: -1.5px;
-    }
-
-    .mybeauty-tagline {
-        margin-top: 3px;
-        font-size: 9px;
+        padding-top: 80px;
     }
 
     .logo-brand {
-        width: 48px;
-        height: 48px;
-    }
-
-    .brand {
-        gap: 10px;
+        width: 50px;
+        height: 50px;
     }
 
     .brand span,
     .contact-text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .hero {
-        padding-top: 40px;
+        padding-top: 50px;
     }
 
     .hero h2 {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .hero-description {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.5;
     }
 
     .hero-info {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .main-button {
         width: 100%;
-        max-width: 320px;
-        padding: 16px;
-        font-size: 20px;
+        max-width: 340px;
+        padding: 18px;
+        font-size: 22px;
     }
 
     .verification-card {
         width: 395px;
-        max-width: 92%;
-        margin: 25px auto 25px;
-        padding: 6px;
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 8px;
     }
 
     .verification-body {
-        padding: 13px 13px 18px;
+        padding: 15px 15px 20px;
     }
 
     .verification-card h2 {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .verification-text {
-        font-size: 15px;
-        line-height: 1.45;
-        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 12px;
     }
 
     .shield-icon {
-        width: 58px;
-        height: 58px;
-        font-size: 28px;
-        margin-bottom: 9px;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        margin-bottom: 10px;
     }
 
     .code-group {
-        gap: 3px;
-        margin: 7px auto;
+        gap: 4px;
+        margin: 8px auto;
     }
 
     .code-input {
-        width: 60px;
-        height: 42px;
-        font-size: 19px;
+        width: 62px;
+        height: 44px;
+        font-size: 20px;
     }
 
     .separator {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .verification-card button {
-        width: 108px;
-        height: 36px;
-        font-size: 14px;
+        width: 110px;
+        height: 37px;
+        font-size: 15px;
         margin-top: 3px;
     }
 
     .recaptcha-container {
-        transform: scale(.64);
-        height: 49px;
+        transform: scale(.68);
+        height: 52px;
     }
 
     .help-text {
-        margin-top: 9px;
-        font-size: 13px;
+        margin-top: 10px;
+        font-size: 14px;
     }
 
     .back-button {
-        margin-top: 6px;
+        margin-top: 7px;
     }
 
+    /* Même espacement haut/bas */
     #verificationForm {
         margin-top: 18px;
-        margin-bottom: 25px;
+        margin-bottom: 18px;
     }
 
-    /* Footer réduit */
+    /* Footer reste petit */
     .verification-footer {
-        padding: 3px 5px;
+        padding: 4px 6px;
     }
 
     .footer-text,
     .verification-footer p {
-        font-size: 8px;
+        font-size: 9px;
+    }
+
+    /* Bouton consulter réduit */
+    .btn-consulter {
+        margin-top: 25px;
+        padding: 15px 35px;
+        font-size: 22px;
+        border-radius: 45px;
     }
 }
 
@@ -601,51 +592,51 @@ footer {
 @media (max-width: 600px) {
 
     .topbar {
-        height: 68px;
+        height: 75px;
         padding: 0 10px;
     }
 
     body {
-        padding-top: 68px;
+        padding-top: 75px;
     }
 
-    /* MyBeauty proche de la disposition ordinateur */
+    /* Positionnement du logo/nom comme sur PC,
+       mais adapté à la petite largeur */
     .mybeauty-brand {
-        top: 7px;
+        top: 8px;
         left: 15px;
     }
 
     .mybeauty-name {
-        font-size: 30px;
-        letter-spacing: -1px;
+        font-size: 32px;
+        letter-spacing: -1.5px;
     }
 
     .mybeauty-tagline {
-        margin-top: 2px;
-        font-size: 8px;
-        line-height: 1.1;
+        margin-top: 3px;
+        font-size: 9px;
     }
 
     .brand {
-        gap: 7px;
-        max-width: 58%;
+        gap: 8px;
+        max-width: 60%;
     }
 
     .logo-brand {
-        width: 38px;
-        height: 38px;
+        width: 42px;
+        height: 42px;
     }
 
     .brand span {
-        font-size: 15px !important;
+        font-size: 17px !important;
         white-space: normal;
-        line-height: 1.15;
+        line-height: 1.2;
     }
 
     .contact-text {
         display: block !important;
         color: #ffffff !important;
-        font-size: 15px !important;
+        font-size: 17px !important;
         font-weight: 700;
         white-space: nowrap;
         position: relative;
@@ -656,95 +647,64 @@ footer {
         display: none;
     }
 
-    .hero {
-        padding-top: 30px;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-        margin-bottom: 15px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-        line-height: 1.45;
-    }
-
-    .hero-info {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
-    /* Bouton consulter réduit */
-    .btn-consulter {
-        margin-top: 25px;
-        padding: 13px 30px;
-        border-radius: 40px;
-        font-size: 18px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
-    }
-
     .verification-card {
         width: 375px;
         max-width: 94%;
-        margin: 22px auto 22px;
-        padding: 4px;
+        margin: 25px auto;
+        padding: 5px;
     }
 
     .verification-body {
-        padding: 9px 9px 15px;
+        padding: 10px 10px 18px;
     }
 
     .verification-header {
-        padding: 4px 8px;
+        padding: 5px 10px;
     }
 
     .verification-header h2 {
-        margin: 4px;
-        font-size: 14px;
+        margin: 5px;
+        font-size: 15px;
     }
 
     .verification-text {
-        font-size: 13px;
-        margin-bottom: 7px;
+        font-size: 14px;
+        margin-bottom: 8px;
     }
 
     .code-input {
-        width: 57px;
-        height: 40px;
-        font-size: 18px;
-    }
-
-    .separator {
-        font-size: 20px;
+        width: 58px;
+        height: 42px;
     }
 
     .recaptcha-container {
-        transform: scale(.58);
-        height: 44px;
+        transform: scale(.60);
+        height: 46px;
     }
 
+    /* Même espace en haut et en bas */
     #verificationForm {
         margin-top: 16px;
-        margin-bottom: 22px;
+        margin-bottom: 16px;
     }
 
-    /* Footer plus petit */
+    /* Footer réduit */
     .verification-footer {
         padding: 3px 4px;
     }
 
-    .footer-text {
-        font-size: 7px;
-        margin-bottom: 1px;
-    }
-
-    .footer-text span {
-        margin: 0 2px;
-    }
-
+    .footer-text,
     .verification-footer p {
-        font-size: 7px;
+        font-size: 8px;
+    }
+
+    /* Bouton consulter réduit */
+    .btn-consulter {
+        margin-top: 20px;
+        padding: 12px 28px;
+        font-size: 18px;
+        border-radius: 40px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
     }
 }
 
@@ -754,109 +714,78 @@ footer {
 
 @media (max-width: 480px) {
 
-    .topbar {
-        height: 65px;
-        padding: 0 8px;
-    }
-
-    body {
-        padding-top: 65px;
-    }
-
-    /* MyBeauty encore légèrement plus petit */
-    .mybeauty-brand {
-        top: 6px;
-        left: 12px;
-    }
-
-    .mybeauty-name {
-        font-size: 27px;
-        letter-spacing: -1px;
-    }
-
-    .mybeauty-tagline {
-        font-size: 7px;
-        margin-top: 2px;
-    }
-
-    .brand {
-        gap: 5px;
-        max-width: 55%;
-    }
-
-    .logo-brand {
-        width: 34px;
-        height: 34px;
-    }
-
-    .brand span {
-        font-size: 14px !important;
-    }
-
-    .contact-text {
-        font-size: 14px !important;
-    }
-
-    .hero {
-        padding-top: 25px;
-    }
-
     .hero h2 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .hero-description {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .hero-info {
-        font-size: 15px;
+        font-size: 16px;
     }
 
-    /* Bouton consulter encore réduit */
-    .btn-consulter {
-        margin-top: 20px;
-        padding: 11px 25px;
-        font-size: 16px;
-        border-radius: 35px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, .15);
+    .code-input {
+        width: 54px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .separator {
+        font-size: 20px;
     }
 
     .verification-card {
         width: 350px;
         max-width: 95%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 22px;
+        margin-bottom: 22px;
     }
 
     .verification-card button {
-        width: 100px;
-        height: 34px;
-        font-size: 13px;
+        width: 105px;
+        height: 35px;
+        font-size: 14px;
     }
 
-    .code-input {
-        width: 52px;
-        height: 38px;
-        font-size: 17px;
-    }
-
-    .separator {
-        font-size: 18px;
-    }
-
+    /* Même espacement haut/bas */
     #verificationForm {
-        margin-top: 16px;
-        margin-bottom: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     /* Footer petit */
     .verification-footer {
-        padding: 2px 4px;
+        padding: 3px 5px;
     }
 
     .footer-text,
     .verification-footer p {
-        font-size: 7px;
+        font-size: 8px;
+    }
+
+    /* Bouton consulter encore mieux adapté */
+    .btn-consulter {
+        margin-top: 18px;
+        padding: 11px 25px;
+        font-size: 17px;
+        border-radius: 35px;
+    }
+
+    /* Marque MyBeauty adaptée au très petit écran */
+    .mybeauty-brand {
+        top: 8px;
+        left: 12px;
+    }
+
+    .mybeauty-name {
+        font-size: 30px;
+        letter-spacing: -1.2px;
+    }
+
+    .mybeauty-tagline {
+        font-size: 8px;
+        margin-top: 2px;
     }
 }
