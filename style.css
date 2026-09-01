@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    padding-top: 110px;
 }
 
 .home-page {
@@ -163,7 +163,7 @@ footer {
     margin-top: auto;
     text-align: center;
     padding: 15px;
-    color: #ec1ca0;
+    color: #ec1c7d;
 }
 
 /* =========================
@@ -245,7 +245,7 @@ footer {
     width: 100%;
 
     /* Même espace en haut et en bas */
-    margin-top: 15px;
+    margin-top: 22px;
     margin-bottom: 22px;
 }
 
