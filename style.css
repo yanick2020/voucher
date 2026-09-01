@@ -1,104 +1,70 @@
-/* =====================================================
-   VoucherChecker
-   STYLE.CSS
-===================================================== */
-
-/* RESET */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* =====================================================
-   BODY
-===================================================== */
-
-body{
-    font-family:'Poppins',sans-serif;
-    min-height:100vh;
-    color:#3d2156;
-    overflow-x:hidden;
-    display:flex;
-    flex-direction:column;
-    padding-top:110px;
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: #3d2156;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
 }
 
-/* =====================================================
-   PAGE D'ACCUEIL
-===================================================== */
-
-.home-page{
-    background:#ffffff;
+.home-page {
+    background: #ffffff;
 }
 
-/* =====================================================
-   PAGE VERIFICATION
-===================================================== */
-
-.verification-page{
-    background:#eef2f5;
-}
-.verification-page .background-shape{
-    display:none;
+.verification-page {
+    background: #eef2f5;
 }
 
-/* =====================================================
-   FORMES D'ARRIERE PLAN
-===================================================== */
-
-.background-shape{
-    position:fixed;
-    border-radius:50%;
-    filter:blur(70px);
-    opacity:.35;
-    z-index:-1;
+.verification-page .background-shape {
+    display: none;
 }
 
-.shape1{
-    width:320px;
-    height:320px;
-    background:#ff6ec7;
-    top:-100px;
-    left:-80px;
+.background-shape {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(70px);
+    opacity: .35;
+    z-index: -1;
 }
 
-.shape2{
-    width:380px;
-    height:380px;
-    background:#8a5cff;
-    bottom:-120px;
-    right:-120px;
+.shape1 {
+    width: 320px;
+    height: 320px;
+    background: #ff6ec7;
+    top: -100px;
+    left: -80px;
 }
 
-
-/* =====================================================
-   TOPBAR
-===================================================== */
+.shape2 {
+    width: 380px;
+    height: 380px;
+    background: #8a5cff;
+    bottom: -120px;
+    right: -120px;
+}
 
 .topbar {
     position: fixed;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100px;
-
     background: #23294D;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 35px;
-
     z-index: 1000;
-
-    box-shadow: 0 5px 20px rgba(0,0,0,.18);
-
-    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .18);
 }
+
 .mybeauty-brand {
     position: absolute;
     top: 25px;
@@ -124,721 +90,443 @@ body{
     line-height: 1.2;
 }
 
-/* =====================================================
-   LOGO + NOM DU SITE
-===================================================== */
-
 .brand {
     display: flex;
     align-items: center;
     gap: 18px;
 }
 
-
 .logo-brand {
-
-    width:70px;
-
-    height:70px;
-
-    object-fit:contain;
-
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 
-
-/* =====================================================
-   TEXTE HAUT GAUCHE + DROITE
-===================================================== */
-
-
-
- 
-/* =====================================================
-   PAGE D'ACCUEIL
-===================================================== */
-
-.hero{
-
-    width:min(950px,92%);
-
-    margin:0 auto;
-
-    padding-top:170px;
-
-    text-align:center;
-
+.hero {
+    width: min(950px, 92%);
+    margin: 0 auto;
+    padding-top: 170px;
+    text-align: center;
 }
 
-.hero h2{
-
-    font-size:52px;
-
-    margin-bottom:25px;
-
+.hero h2 {
+    font-size: 52px;
+    margin-bottom: 25px;
 }
 
-.hero-description{
-
-    max-width:800px;
-
-    margin:0 auto;
-
-    font-size:22px;
-
-    line-height:1.8;
-
-    color:#6d5b7c;
-
+.hero-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #6d5b7c;
 }
 
-.main-button{
-
-    display:inline-block;
-
-    margin-top:50px;
-
-    text-decoration:none;
-
-    padding:22px 70px;
-
-    border-radius:60px;
-
-    color:white;
-
-    font-size:30px;
-
-    font-weight:700;
-
-    background:linear-gradient(135deg,#FF2C97,#8E44FF);
-
-    transition:.35s;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.18);
-
+.main-button {
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 22px 70px;
+    border-radius: 60px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF2C97, #8E44FF);
+    transition: .35s;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
 }
 
-.main-button:hover{
-
-    transform:translateY(-5px);
-
+.main-button:hover {
+    transform: translateY(-5px);
 }
 
-.hero-info{
-
-    margin-top:70px;
-
-    font-size:26px;
-
-    line-height:1.8;
-
-    color:#6d5b7c;
-
+.hero-info {
+    margin-top: 70px;
+    font-size: 26px;
+    line-height: 1.8;
+    color: #6d5b7c;
 }
 
-footer{
-
-    margin-top:auto;
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#6f5d7d;
-
-}/* =====================================================
-   PAGE DE VÉRIFICATION
-===================================================== */
-
-
-   .verification-card{
-    width:160px;
-    max-width:95%;
-    margin:30px auto;
-    background:#ffffff;
-    border-radius:6px;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 30px;
+    color: #6f5d7d;
 }
 
-.verification-header{
-    padding:32px 25px;
-    border-bottom:1px solid #e5e5e5;
-    background:#ffffff;
+.verification-card {
+    width: 420px;
+    max-width: 50%;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
 }
 
-.verification-header h2{
-    margin:0;
-    text-align:center;
-    font-size:30px;
-    font-weight:500;
-    color:#22396f;
-    line-height:1.3;
+.verification-header {
+    padding: 12px 25px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #ffffff;
 }
 
-.verification-body{
-    padding:40px 25px;
-}
-/* CONTENU DE LA CARTE */
-
-
-/* =====================================================
-   ICÔNE
-===================================================== */
-
-.shield-icon{
-
-    width:90px;
-
-    height:90px;
-
-    margin:0 auto 25px;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    background:#FCE8F4;
-
-    font-size:45px;
-
+.verification-header h2 {
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #22396f;
+    line-height: 1.3;
 }
 
-/* =====================================================
-   TITRE
-===================================================== */
-
-.verification-card h2{
-
-    font-size:40px;
-
-    color:#23294D;
-
-    margin-bottom:20px;
-
+.verification-body {
+    padding: 20px 30px;
 }
 
-/* =====================================================
-   TEXTE
-===================================================== */
-
-.verification-text{
-
-    max-width:600px;
-
-    margin:0 auto 40px;
-
-    font-size:20px;
-
-    color:#666;
-
-    line-height:1.8;
-
+.shield-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCE8F4;
+    font-size: 45px;
 }
 
-/* =====================================================
-   ZONE DE SAISIE DU CODE
-===================================================== */
-
-.code-group{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:0;
-
-    width:100%;
-
-    margin:20px auto;
-
-}
-#verificationForm{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-.recaptcha-container{
-    margin:15px 0;
+.verification-card h2 {
+    font-size: 20px;
+    color: #23294D;
+    margin-bottom: 20px;
 }
 
-#verifyBtn{
-    margin-top:8px;
-}
-.code-input{
-    width:75px;
-    height:52px;
-
-    border:1px solid #bdbdbd;
-
-    border-right:none;
-
-    text-align:center;
-
-    font-size:22px;
-
-    font-weight:500;
-
-    color:#333;
-
-    outline:none;
-
-    background:#fff;
+.verification-text {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 20px;
+    color: #666;
+    line-height: 1.8;
 }
 
-.code-input:first-child{
-
-    border-radius:4px 0 0 4px;
-
+.code-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    margin: 20px auto;
 }
 
-.code-input:last-child{
-
-    border-right:1px solid #d5d5d5;
-
-    border-radius:0 4px 4px 0;
-
+#verificationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.code-input:focus{
-
-    border:1px solid #4a90ff;
-
-    z-index:10;
-
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0;
 }
 
-
-
-.separator{
-
-    font-size:34px;
-
-    font-weight:bold;
-
-    color:#8E44FF;
-
+#verifyBtn {
+    margin-top: 8px;
 }
 
-/* =====================================================
-   BOUTON
-===================================================== */
-.verification-card button{
-
-    width:150px;
-
-    height:52px;
-
-    border:none;
-
-    border-radius:4px;
-
-    background:#ec1c7d;
-
-    color:#fff;
-
-    font-size:16px;
-
-    font-weight:700;
-
-    cursor:pointer;
-
-    margin-top:18px;
-
-    transition:.25s;
-
+.code-input {
+    width: 75px;
+    height: 40px;
+    border: 1px solid #bdbdbd;
+    border-right: none;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    outline: none;
+    background: #fff;
 }
 
-.verification-card button:hover{
-
-    background:#d81870;
-
-}
-/* =====================================================
-   MESSAGE
-===================================================== */
-
-#result{
-    min-height:0;
-    margin-top:10px;
-}
-.success{
-    color:#28a745;
-    font-size:20px;
-    font-weight:700;
-    text-align:center;
-    margin-top:20px;
-
+.code-input:first-child {
+    border-radius: 4px 0 0 4px;
 }
 
-.error{
-    color:#D62828;
-    font-size:20px;
-    font-weight:700;
-    text-align:center;
-    margin-top:20px;
-
+.code-input:last-child {
+    border-right: 1px solid #d5d5d5;
+    border-radius: 0 4px 4px 0;
 }
 
-/* =====================================================
-   TEXTE D'AIDE
-===================================================== */
-
-.help-text{
-
-    margin-top:40px;
-
-    color:#777;
-
-    font-size:17px;
-
-    line-height:1.8;
-
+.code-input:focus {
+    border: 1px solid #4a90ff;
+    z-index: 10;
 }
 
-/* =====================================================
-   RETOUR
-===================================================== */
-
-.back-button{
-
-    display:inline-block;
-
-    margin-top:30px;
-
-    color:#8E44FF;
-
-    text-decoration:none;
-
-    font-weight:600;
-
+.separator {
+    font-size: 34px;
+    font-weight: bold;
+    color: #8E44FF;
 }
 
-.back-button:hover{
-
-    text-decoration:underline;
-
-}/* =====================================================
-   RESPONSIVE
-===================================================== */
-
-@media (max-width:900px){
-
-    .hero h2{
-        font-size:42px;
-    }
-
-    .hero-description{
-        font-size:19px;
-    }
-
-    .hero-info{
-        font-size:21px;
-    }
-
-    .verification-card{
-
-        padding:45px 30px;
-
-    }
-
+.verification-card button {
+    width: 150px;
+    height: 52px;
+    border: none;
+    border-radius: 4px;
+    background: #ec1c7d;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: .25s;
 }
 
-@media (max-width:768px){
-
-    .topbar{
-
-        height:90px;
-
-        padding:0 20px;
-
-    }
-
-    body{
-
-        padding-top:90px;
-
-    }
-
-    .logo-brand{
-
-        width:55px;
-
-        height:55px;
-
-    }
-
-   .brand span,
-.contact-text{
-
-    font-size:24px;
-
-    }
-
-    .hero{
-
-        padding-top:80px;
-
-    }
-
-    .hero h2{
-
-        font-size:34px;
-
-    }
-
-    .hero-description{
-
-        font-size:17px;
-
-    }
-
-    .hero-info{
-
-        font-size:18px;
-
-    }
-
-    .main-button{
-
-        width:100%;
-
-        max-width:340px;
-
-        padding:18px;
-
-        font-size:22px;
-
-    }
-
-    .verification-card{
-
-        width:95%;
-
-        padding:35px 20px;
-
-    }
-
-    .verification-card h2{
-
-        font-size:30px;
-
-    }
-
-    .verification-text{
-
-        font-size:17px;
-
-    }
-
-    .code-group{
-
-        gap:8px;
-
-    }
-
-    .code-input{
-
-        width:85px;
-
-        height:60px;
-
-        font-size:24px;
-
-    }
-
-    .separator{
-
-        font-size:26px;
-
-    }
-
-    .verification-card button{
-
-        font-size:20px;
-
-    }
-
+.verification-card button:hover {
+    background: #d81870;
 }
 
-@media (max-width:480px){
-
-    .hero h2{
-        font-size:28px;
-    }
-
-    .hero-description{
-        font-size:16px;
-    }
-
-    .hero-info{
-        font-size:16px;
-    }
-
-    .code-input{
-        width:70px;
-        height:55px;
-        font-size:20px;
-    }
-
-    .separator{
-        font-size:22px;
-    }
-
+#result {
+    min-height: 0;
+    margin-top: 10px;
 }
 
-
-/* RECAPTCHA */
-
-.recaptcha-container{
-
-    display:flex;
-
-    justify-content:center;
-
-    margin:18px 0;
-
+.success {
+    color: #28a745;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* BOUTON CONSULTER */
-
-.btn-consulter{
-    display:inline-block;
-    margin-top:50px;
-    padding:22px 70px;
-    border-radius:60px;
-    background:linear-gradient(135deg,#FF2C97,#8E44FF);
-    color:#ffffff;
-    text-decoration:none;
-    font-size:30px;
-    font-weight:700;
-    transition:.35s;
-    box-shadow:0 20px 40px rgba(0,0,0,.18);
+.error {
+    color: #D62828;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.btn-consulter:hover{
-    transform:translateY(-5px);
-    box-shadow:0 25px 50px rgba(0,0,0,.25);
+.help-text {
+    margin-top: 40px;
+    color: #777;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
-
-/* MOBILE TOPBAR */
-
-@media screen and (max-width:600px){
-
-    .topbar{
-        height:90px;
-        padding:0 10px;
-    }
-
-
-    .brand{
-        gap:8px;
-        display:flex;
-        align-items:center;
-        max-width:60%;
-    }
-
-
-    .logo-brand{
-        width:45px;
-        height:45px;
-    }
-
-
-    .brand span{
-        font-size:18px !important;
-        white-space:normal;
-        line-height:1.2;
-    }
-
-
-    .contact-text{
-
-        display:block !important;
-
-        color:#ffffff !important;
-
-        font-size:18px !important;
-
-        font-weight:700;
-
-        white-space:nowrap;
-
-        position:relative;
-
-        z-index:2000;
-
-    }
-.refund-link{
-    display:none;
+.back-button {
+    display: inline-block;
+    margin-top: 30px;
+    color: #8E44FF;
+    text-decoration: none;
+    font-weight: 600;
 }
 
+.back-button:hover {
+    text-decoration: underline;
 }
 
+.btn-consulter {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 22px 70px;
+    border-radius: 60px;
+    background: linear-gradient(135deg, #FF2C97, #8E44FF);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    transition: .35s;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
+}
 
-/* SUPPRIME LE SOULIGNEMENT DU LIEN */
+.btn-consulter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .25);
+}
 
 .contact-text,
 .contact-text:visited,
 .contact-text:hover,
 .contact-text:active {
-    text-decoration:none !important;
-    color:#ffffff !important;
-}
-/* FOOTER PAGE VERIFICATION */
-
-/* ==========================================
-   FOOTER PAGE VERIFICATION
-========================================== */
-
-.verification-footer{
-
-    margin-top:70px;
-
-    padding:30px 20px;
-
-    background:#eef2f5;
-
-    border-top:1px solid #d8d8d8;
-
-    text-align:center;
-
+    text-decoration: none !important;
+    color: #ffffff !important;
 }
 
-.footer-text{
-
-    color:#e60087;
-
-    font-size:14px;
-
-    margin-bottom:15px;
-
+.verification-footer {
+    margin-top: 70px;
+    padding: 30px 20px;
+    background: #eef2f5;
+    border-top: 1px solid #d8d8d8;
+    text-align: center;
 }
 
-.footer-text span{
-
-    color:#999;
-
-    margin:0 8px;
-
+.footer-text {
+    color: #e60087;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
-.verification-footer p{
+.footer-text span {
+    color: #999;
+    margin: 0 8px;
+}
 
-    margin:0;
+.verification-footer p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+}
 
-    color:#555;
+@media (max-width: 900px) {
+    .hero h2 {
+        font-size: 42px;
+    }
 
-    font-size:14px;
+    .hero-description {
+        font-size: 19px;
+    }
 
+    .hero-info {
+        font-size: 21px;
+    }
+
+    .verification-card {
+        padding: 45px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topbar {
+        height: 90px;
+        padding: 0 20px;
+    }
+
+    body {
+        padding-top: 90px;
+    }
+
+    .logo-brand {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand span,
+    .contact-text {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding-top: 80px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-info {
+        font-size: 18px;
+    }
+
+    .main-button {
+        width: 100%;
+        max-width: 340px;
+        padding: 18px;
+        font-size: 22px;
+    }
+
+    .verification-card {
+        width: 95%;
+        padding: 35px 20px;
+    }
+
+    .verification-card h2 {
+        font-size: 30px;
+    }
+
+    .verification-text {
+        font-size: 17px;
+    }
+
+    .code-group {
+        gap: 8px;
+    }
+
+    .code-input {
+        width: 85px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .separator {
+        font-size: 26px;
+    }
+
+    .verification-card button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topbar {
+        height: 90px;
+        padding: 0 10px;
+    }
+
+    .brand {
+        gap: 8px;
+        max-width: 60%;
+    }
+
+    .logo-brand {
+        width: 45px;
+        height: 45px;
+    }
+
+    .brand span {
+        font-size: 18px !important;
+        white-space: normal;
+        line-height: 1.2;
+    }
+
+    .contact-text {
+        display: block !important;
+        color: #ffffff !important;
+        font-size: 18px !important;
+        font-weight: 700;
+        white-space: nowrap;
+        position: relative;
+        z-index: 2000;
+    }
+
+    .refund-link {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-info {
+        font-size: 16px;
+    }
+
+    .code-input {
+        width: 70px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .separator {
+        font-size: 22px;
+    }
 }
