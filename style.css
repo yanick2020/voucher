@@ -1,17 +1,7 @@
-/* =========================================================
-   RESET
-========================================================= */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    min-height: 100%;
 }
 
 body {
@@ -21,12 +11,8 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 110px;
 }
-
-/* =========================================================
-   PAGES
-========================================================= */
 
 .home-page {
     background: #ffffff;
@@ -39,10 +25,6 @@ body {
 .verification-page .background-shape {
     display: none;
 }
-
-/* =========================================================
-   BACKGROUND SHAPES
-========================================================= */
 
 .background-shape {
     position: fixed;
@@ -64,13 +46,13 @@ body {
     width: 380px;
     height: 380px;
     background: #8a5cff;
-    right: -120px;
     bottom: -120px;
+    right: -120px;
 }
 
-/* =========================================================
+/* =========================
    TOPBAR
-========================================================= */
+========================= */
 
 .topbar {
     position: fixed;
@@ -82,23 +64,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 35px;
     z-index: 1000;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .18);
 }
 
-/* MyBeauty */
-
 .mybeauty-brand {
     position: absolute;
-    top: 9px;
-    left: 25px;
+    top: 10px;
+    left: 30px;
     z-index: 10;
 }
 
 .mybeauty-name {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 42px;
+    font-size: 46px;
     font-weight: 800;
     line-height: 1;
     letter-spacing: -2px;
@@ -106,158 +86,522 @@ body {
 }
 
 .mybeauty-tagline {
-    margin-top: 3px;
+    margin-top: 4px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
-    color: #f3ecef;
+    color: #f3ecefd5;
+    line-height: 1.2;
 }
 
-/* =========================================================
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo-brand {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* =========================
    HERO
-========================================================= */
+========================= */
 
 .hero {
-    width: min(900px, 92%);
+    width: min(950px, 92%);
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 170px;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 46px;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-size: 52px;
+    margin-bottom: 25px;
 }
 
 .hero-description {
-    max-width: 760px;
+    max-width: 800px;
     margin: 0 auto;
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 22px;
+    line-height: 1.8;
     color: #6d5b7c;
-}
-
-.main-button,
-.btn-consulter {
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 60px;
-    color: #fff;
-    font-weight: 700;
-    background: linear-gradient(135deg, #FF2C97, #8E44FF);
-    transition: .3s;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, .16);
 }
 
 .main-button {
-    margin-top: 35px;
-    padding: 18px 55px;
-    font-size: 25px;
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 22px 70px;
+    border-radius: 60px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF2C97, #8E44FF);
+    transition: .35s;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
 }
 
-.main-button:hover,
-.btn-consulter:hover {
-    transform: translateY(-3px);
+.main-button:hover {
+    transform: translateY(-5px);
 }
 
 .hero-info {
-    margin-top: 50px;
-    font-size: 22px;
-    line-height: 1.6;
+    margin-top: 70px;
+    font-size: 26px;
+    line-height: 1.8;
     color: #6d5b7c;
 }
 
-/* =========================================================
+/* =========================
    FOOTER
-========================================================= */
+========================= */
 
 footer {
-    margin-top: 10px;       /* IMPORTANT : plus de grand espace automatique */
-    padding: 6px 8px;
+    margin-top: auto;
     text-align: center;
+    padding: 15px;
     color: #ec1c7d;
-    font-size: 10px;
-    line-height: 1.4;
-    height: auto;
-    min-height: 0;
 }
 
-/* =========================================================
+/* =========================
    VERIFICATION CARD
-========================================================= */
+========================= */
 
 .verification-card {
-    width: 420px;
-    max-width: calc(100% - 24px);
-    margin: 25px auto 15px;
-    background: #fff;
+    width: 440px;
+    max-width: 92%;
+    margin: 45px auto 35px;
+    background: #ffffff;
     border-radius: 6px;
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .12);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
 }
 
 .verification-header {
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-bottom: 1px solid #e5e5e5;
-    background: #fff;
+    background: #ffffff;
 }
 
 .verification-header h2 {
-    margin: 5px;
+    margin: 8px;
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     color: #22396f;
     line-height: 1.3;
 }
 
 .verification-body {
-    padding: 15px 20px;
-    text-align: center;
+    padding: 20px 25px 25px;
 }
 
 .shield-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 10px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #FCE8F4;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .verification-card h2 {
-    font-size: 19px;
+    font-size: 20px;
     color: #23294D;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .verification-text {
     max-width: 600px;
-    margin: 0 auto;
-    font-size: 14px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* =========================
+   VERIFICATION FORM
+========================= */
+
+.code-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    margin: 12px auto;
+}
+
+#verificationForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    /* Même espace en haut et en bas */
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    transform: scale(.76);
+    transform-origin: center;
+    margin: 4px 0;
+    height: 58px;
+}
+
+#verifyBtn {
+    margin-top: 6px;
+}
+
+.code-input {
+    width: 68px;
+    height: 42px;
+    border: 1px solid #bdbdbd;
+    border-right: none;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+    outline: none;
+    background: #fff;
+}
+
+.code-input:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.code-input:last-child {
+    border-right: 1px solid #d5d5d5;
+    border-radius: 0 4px 4px 0;
+}
+
+.code-input:focus {
+    border: 1px solid #4a90ff;
+    z-index: 10;
+}
+
+.separator {
+    font-size: 30px;
+    font-weight: bold;
+    color: #8E44FF;
+}
+
+.verification-card button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background: #ec1c7d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: .25s;
+}
+
+.verification-card button:hover {
+    background: #d81870;
+}
+
+#result {
+    min-height: 0;
+    margin-top: 5px;
+}
+
+.success {
+    color: #28a745;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.error {
+    color: #D62828;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.help-text {
+    margin-top: 18px;
+    color: #777;
+    font-size: 15px;
     line-height: 1.5;
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+.back-button {
+    display: inline-block;
+    margin-top: 12px;
+    color: #8E44FF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   BOUTON CONSULTER
+========================= */
+
+.btn-consulter {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 22px 70px;
+    border-radius: 60px;
+    background: linear-gradient(135deg, #FF2C97, #8E44FF);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    transition: .35s;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
+}
+
+.btn-consulter:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, .25);
+}
+
+.contact-text,
+.contact-text:visited,
+.contact-text:hover,
+.contact-text:active {
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+
+/* =========================
+   VERIFICATION FOOTER
+========================= */
+
+.verification-footer {
+    margin-top: 0;
+    padding: 5px 8px;
+    background: #eef2f5;
+    border-top: 1px solid #d8d8d8;
+    text-align: center;
+}
+
+.footer-text {
+    color: #ec1c7d;
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.footer-text span {
+    color: #ec1c7d;
+    margin: 0 4px;
+}
+
+.verification-footer p {
+    margin: 0;
+    color: #ec1c7d;
+    font-size: 10px;
+}
+
+/* =========================
+   TABLET / 900px
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 19px;
+    }
+
+    .hero-info {
+        font-size: 21px;
+    }
+
+    .verification-card {
+        width: 415px;
+        max-width: 88%;
+        margin: 35px auto 30px;
+    }
+
+    #verificationForm {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .verification-footer {
+        padding: 5px 8px;
+    }
+}
+
+/* =========================
+   TABLET / 768px
+========================= */
+
+@media (max-width: 768px) {
+
+    .topbar {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    .logo-brand {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand span,
+    .contact-text {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .hero-info {
+        font-size: 18px;
+    }
+
+    .main-button {
+        width: 100%;
+        max-width: 340px;
+        padding: 18px;
+        font-size: 22px;
+    }
+
+    .verification-card {
+        width: 395px;
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 8px;
+    }
+
+    .verification-body {
+        padding: 15px 15px 20px;
+    }
+
+    .verification-card h2 {
+        font-size: 20px;
+    }
+
+    .verification-text {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    .shield-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .code-group {
+        gap: 4px;
+        margin: 8px auto;
+    }
+
+    .code-input {
+        width: 62px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    .separator {
+        font-size: 24px;
+    }
+
+    .verification-card button {
+        width: 110px;
+        height: 37px;
+        font-size: 15px;
+        margin-top: 3px;
+    }
+
+    .recaptcha-container {
+        transform: scale(.68);
+        height: 52px;
+    }
+
+    .help-text {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .back-button {
+        margin-top: 7px;
+    }
+
+    /* Même espacement haut/bas */
+    #verificationForm {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+
+    /* Footer reste petit */
+    .verification-footer {
+        padding: 4px 6px;
+    }
+
+    .footer-text,
+    .verification-footer p {
+        font-size: 9px;
+    }
+
+    /* Bouton consulter réduit */
+    .btn-consulter {
+        margin-top: 25px;
+        padding: 15px 35px;
+        font-size: 22px;
+        border-radius: 45px;
+    }
+}
+
+/* =========================
+   MOBILE / 600px
+========================= */
 
 @media (max-width: 600px) {
 
-    body {
-        padding-top: 65px;
-        min-height: auto;
-    }
-
     .topbar {
-        height: 65px;
-        padding: 0 15px;
+        height: 75px;
+        padding: 0 10px;
     }
 
+    body {
+        padding-top: 75px;
+    }
+
+    /* Positionnement du logo/nom comme sur PC,
+       mais adapté à la petite largeur */
     .mybeauty-brand {
         top: 8px;
         left: 15px;
@@ -269,107 +613,179 @@ footer {
     }
 
     .mybeauty-tagline {
-        font-size: 8px;
-        margin-top: 2px;
+        margin-top: 3px;
+        font-size: 9px;
     }
 
-    .hero {
-        width: 94%;
-        padding-top: 45px;
+    .brand {
+        gap: 8px;
+        max-width: 60%;
     }
 
-    .hero h2 {
-        font-size: 30px;
-        margin-bottom: 15px;
+    .logo-brand {
+        width: 42px;
+        height: 42px;
     }
 
-    .hero-description {
-        font-size: 15px;
-        line-height: 1.5;
+    .brand span {
+        font-size: 17px !important;
+        white-space: normal;
+        line-height: 1.2;
     }
 
-    .main-button {
-        margin-top: 25px;
-        padding: 13px 32px;
-        font-size: 18px;
+    .contact-text {
+        display: block !important;
+        color: #ffffff !important;
+        font-size: 17px !important;
+        font-weight: 700;
+        white-space: nowrap;
+        position: relative;
+        z-index: 2000;
     }
 
-    .hero-info {
-        margin-top: 30px;
-        font-size: 15px;
-        line-height: 1.5;
+    .refund-link {
+        display: none;
     }
 
     .verification-card {
-        width: calc(100% - 20px);
-        margin: 15px auto 10px;
-    }
-
-    .verification-header {
-        padding: 7px 10px;
-    }
-
-    .verification-header h2 {
-        font-size: 15px;
-        margin: 4px;
+        width: 375px;
+        max-width: 94%;
+        margin: 25px auto;
+        padding: 5px;
     }
 
     .verification-body {
-        padding: 12px 14px;
+        padding: 10px 10px 18px;
     }
 
-    .shield-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        margin-bottom: 8px;
+    .verification-header {
+        padding: 5px 10px;
     }
 
-    .verification-card h2 {
-        font-size: 17px;
-        margin-bottom: 8px;
+    .verification-header h2 {
+        margin: 5px;
+        font-size: 15px;
     }
 
     .verification-text {
-        font-size: 13px;
-        line-height: 1.4;
+        font-size: 14px;
+        margin-bottom: 8px;
     }
 
-    /* FOOTER MOBILE */
-    footer {
-        margin-top: 5px;
-        padding: 4px 6px;
+    .code-input {
+        width: 58px;
+        height: 42px;
+    }
+
+    .recaptcha-container {
+        transform: scale(.60);
+        height: 46px;
+    }
+
+    /* Même espace en haut et en bas */
+    #verificationForm {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* Footer réduit */
+    .verification-footer {
+        padding: 3px 4px;
+    }
+
+    .footer-text,
+    .verification-footer p {
         font-size: 8px;
-        line-height: 1.3;
+    }
+
+    /* Bouton consulter réduit */
+    .btn-consulter {
+        margin-top: 20px;
+        padding: 12px 28px;
+        font-size: 18px;
+        border-radius: 40px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
     }
 }
 
-/* =========================================================
-   TRÈS PETITS ÉCRANS
-========================================================= */
+/* =========================
+   MOBILE / 480px
+========================= */
 
-@media (max-width: 380px) {
-
-    .hero {
-        padding-top: 30px;
-    }
+@media (max-width: 480px) {
 
     .hero h2 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .hero-description {
-        font-size: 14px;
-    }
-
-    .main-button {
-        padding: 11px 25px;
         font-size: 16px;
     }
 
-    footer {
-        font-size: 7px;
+    .hero-info {
+        font-size: 16px;
+    }
+
+    .code-input {
+        width: 54px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .separator {
+        font-size: 20px;
+    }
+
+    .verification-card {
+        width: 350px;
+        max-width: 95%;
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+
+    .verification-card button {
+        width: 105px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    /* Même espacement haut/bas */
+    #verificationForm {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Footer petit */
+    .verification-footer {
         padding: 3px 5px;
     }
-}
 
+    .footer-text,
+    .verification-footer p {
+        font-size: 8px;
+    }
+
+    /* Bouton consulter encore mieux adapté */
+    .btn-consulter {
+        margin-top: 18px;
+        padding: 11px 25px;
+        font-size: 17px;
+        border-radius: 35px;
+    }
+
+    /* Marque MyBeauty adaptée au très petit écran */
+    .mybeauty-brand {
+        top: 8px;
+        left: 12px;
+    }
+
+    .mybeauty-name {
+        font-size: 30px;
+        letter-spacing: -1.2px;
+    }
+
+    .mybeauty-tagline {
+        font-size: 8px;
+        margin-top: 2px;
+    }
+}
