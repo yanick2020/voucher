@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
@@ -11,8 +12,9 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 80px;
 }
+
 
 .home-page {
     background: #ffffff;
@@ -25,6 +27,7 @@ body {
 .verification-page .background-shape {
     display: none;
 }
+
 
 .background-shape {
     position: fixed;
@@ -50,6 +53,7 @@ body {
     right: -120px;
 }
 
+
 /* =========================
    TOPBAR
 ========================= */
@@ -68,6 +72,7 @@ body {
     z-index: 1000;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .18);
 }
+
 
 .mybeauty-brand {
     position: absolute;
@@ -105,6 +110,7 @@ body {
     height: 70px;
     object-fit: contain;
 }
+
 
 /* =========================
    HERO
@@ -155,16 +161,27 @@ body {
     color: #6d5b7c;
 }
 
+
 /* =========================
    FOOTER
 ========================= */
 
 footer {
-    margin-top: auto;
     text-align: center;
     padding: 15px;
-    color: #ec1c7d;
+    color: #ec1ca0;
 }
+
+
+/* =========================
+   FOOTER PAGE D'ACCUEIL
+========================= */
+
+.home-page footer {
+    padding: 25px 15px 20px;
+    color: #ec1ca0;
+}
+
 
 /* =========================
    VERIFICATION CARD
@@ -212,9 +229,9 @@ footer {
 }
 
 .verification-card h2 {
-    font-size: 20px;
+    font-size: 26px;
     color: #23294D;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .verification-text {
@@ -224,6 +241,7 @@ footer {
     color: #666;
     line-height: 1.6;
 }
+
 
 /* =========================
    VERIFICATION FORM
@@ -235,7 +253,7 @@ footer {
     align-items: center;
     gap: 0;
     width: 100%;
-    margin: 12px auto;
+    margin: -15px auto 5px;
 }
 
 #verificationForm {
@@ -244,8 +262,12 @@ footer {
     align-items: center;
     width: 100%;
 
+    /* Longueur augmentée sans modifier la largeur */
+    padding-top: 100px;
+    padding-bottom: 35px;
+
     /* Même espace en haut et en bas */
-    margin-top: 22px;
+    margin-top: 0;
     margin-bottom: 22px;
 }
 
@@ -353,6 +375,7 @@ footer {
     text-decoration: underline;
 }
 
+
 /* =========================
    BOUTON CONSULTER
 ========================= */
@@ -384,34 +407,53 @@ footer {
     color: #ffffff !important;
 }
 
+
 /* =========================
    VERIFICATION FOOTER
+   ESPACE REDUIT UNIQUEMENT
 ========================= */
 
 .verification-footer {
-    margin-top: 0;
-    padding: 5px 8px;
+    margin-top: 80px;
+    padding: 30px 6px;
     background: #eef2f5;
     border-top: 1px solid #d8d8d8;
     text-align: center;
 }
 
+.verification-footer .footer-top {
+    color: #ec1ca0;
+    font-size: 10px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.verification-footer .footer-bottom {
+    color: #ec1ca0;
+    font-size: 10px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+/* Anciennes règles conservées */
 .footer-text {
-    color: #ec1c7d;
+    color: #ec1ca0;
     font-size: 10px;
     margin-bottom: 2px;
 }
 
 .footer-text span {
-    color: #ec1c7d;
+    color: #ec1ca0;
     margin: 0 4px;
 }
 
 .verification-footer p {
     margin: 0;
-    color: #ec1c7d;
+    color: #ec1ca0;
     font-size: 10px;
 }
+
 
 /* =========================
    TABLET / 900px
@@ -440,12 +482,20 @@ footer {
     #verificationForm {
         margin-top: 20px;
         margin-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 35px;
     }
 
-    .verification-footer {
-        padding: 5px 8px;
+    .verification-page .verification-footer {
+        padding: 2px 6px;
+    }
+
+    .verification-page .verification-footer .footer-top,
+    .verification-page .verification-footer .footer-bottom {
+        font-size: 10px;
     }
 }
+
 
 /* =========================
    TABLET / 768px
@@ -564,16 +614,18 @@ footer {
     #verificationForm {
         margin-top: 18px;
         margin-bottom: 18px;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 
-    /* Footer reste petit */
-    .verification-footer {
-        padding: 4px 6px;
+    /* Footer reste petit en hauteur */
+    .verification-page .verification-footer {
+        padding: 2px 5px;
     }
 
-    .footer-text,
-    .verification-footer p {
-        font-size: 9px;
+    .verification-page .verification-footer .footer-top,
+    .verification-page .verification-footer .footer-bottom {
+        font-size: 10px;
     }
 
     /* Bouton consulter réduit */
@@ -584,6 +636,7 @@ footer {
         border-radius: 45px;
     }
 }
+
 
 /* =========================
    MOBILE / 600px
@@ -686,16 +739,19 @@ footer {
     #verificationForm {
         margin-top: 16px;
         margin-bottom: 16px;
+        padding-top: 18px;
+        padding-bottom: 28px;
     }
 
-    /* Footer réduit */
-    .verification-footer {
-        padding: 3px 4px;
+    /* Footer réduit en hauteur, texte conservé à 10px */
+    .verification-page .verification-footer {
+        padding: 2px 4px;
     }
 
-    .footer-text,
-    .verification-footer p {
-        font-size: 8px;
+    .verification-page .verification-footer .footer-top,
+    .verification-page .verification-footer .footer-bottom {
+        font-size: 10px;
+        line-height: 1.2;
     }
 
     /* Bouton consulter réduit */
@@ -707,6 +763,7 @@ footer {
         box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
     }
 }
+
 
 /* =========================
    MOBILE / 480px
@@ -751,18 +808,21 @@ footer {
 
     /* Même espacement haut/bas */
     #verificationForm {
-        margin-top: 15px;
+        margin-top: 105px;
         margin-bottom: 15px;
+        padding-top: 105px;
+        padding-bottom: 25px;
     }
 
-    /* Footer petit */
-    .verification-footer {
-        padding: 3px 5px;
+    /* Footer petit en hauteur, texte conservé */
+    .verification-page .verification-footer {
+        padding: 2px 4px;
     }
 
-    .footer-text,
-    .verification-footer p {
-        font-size: 8px;
+    .verification-page .verification-footer .footer-top,
+    .verification-page .verification-footer .footer-bottom {
+        font-size: 10px;
+        line-height: 1.2;
     }
 
     /* Bouton consulter encore mieux adapté */
