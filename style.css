@@ -565,7 +565,9 @@ footer{
 }
 
 
+/* ================================= */
 /* TABLET */
+/* ================================= */
 
 @media (max-width:900px){
 
@@ -580,10 +582,13 @@ footer{
     .hero-info{
         font-size:21px;
     }
+
 }
 
 
+/* ================================= */
 /* TABLET / PETITS ECRANS */
+/* ================================= */
 
 @media (max-width:768px){
 
@@ -638,50 +643,17 @@ footer{
         font-size:22px;
     }
 
-    .verification-card{
-        width:95%;
-        max-width:470px;
-        margin:10px auto;
-    }
-
-    .verification-body{
-        padding:25px 20px;
-    }
-
-    .verification-card h2{
-        font-size:30px;
-    }
-
-    .verification-text{
-        font-size:17px;
-    }
-
-    .code-group{
-        gap:5px;
-    }
-
-    .code-input{
-        width:70px;
-        height:55px;
-        font-size:22px;
-    }
-
-    .separator{
-        font-size:26px;
-    }
-
-    .verification-card button{
-        font-size:20px;
-    }
-
     .verification-footer{
         margin-top:10px;
         padding:25px 15px;
     }
+
 }
 
 
+/* ================================= */
 /* MOBILE */
+/* ================================= */
 
 @media screen and (max-width:600px){
 
@@ -815,68 +787,10 @@ footer{
     }
 
 
-    /* CARTE DE VERIFICATION */
-
-    .verification-card{
-        width:calc(100% - 20px);
-        max-width:470px;
-
-        margin:10px auto;
-
-        border-radius:6px;
-    }
-
-    .verification-header{
-        padding:10px 15px;
-    }
-
-    .verification-header h2{
-        font-size:24px;
-        line-height:1.3;
-    }
-
-    .verification-body{
-        padding:20px 12px;
-    }
-
-    .verification-card h2{
-        font-size:26px;
-        margin-bottom:15px;
-    }
-
-    .verification-text{
-        width:100%;
-        max-width:100%;
-
-        font-size:15px;
-        line-height:1.6;
-
-        margin:0 auto 25px;
-    }
-
-
-    /* CODE */
-
-    .code-group{
-        width:100%;
-        gap:2px;
-        margin:15px auto;
-    }
-
-    .code-input{
-        width:calc((100vw - 85px) / 6);
-        max-width:55px;
-        min-width:35px;
-
-        height:48px;
-
-        font-size:19px;
-    }
-
-    .separator{
-        font-size:22px;
-        padding:0 1px;
-    }
+    /*
+       CARTE DE VERIFICATION
+       AUCUNE MODIFICATION RESPONSIVE
+    */
 
 
     /* RECAPTCHA */
@@ -889,29 +803,6 @@ footer{
     }
 
 
-    /* BUTTON */
-
-    .verification-card button{
-        width:140px;
-        height:48px;
-        font-size:17px;
-        margin-top:12px;
-    }
-
-
-    /* HELP */
-
-    .help-text{
-        margin-top:25px;
-        font-size:14px;
-        line-height:1.6;
-    }
-
-    .back-button{
-        margin-top:20px;
-    }
-
-
     /* FOOTER VERIFICATION */
 
     .verification-footer{
@@ -921,8 +812,6 @@ footer{
         margin-top:5px !important;
 
         padding:22px 12px !important;
-
-        background:#eef2f5 !important;
 
         box-sizing:border-box !important;
     }
@@ -979,10 +868,13 @@ footer{
 
         font-size:21px;
     }
+
 }
 
 
+/* ================================= */
 /* TRES PETITS ECRANS */
+/* ================================= */
 
 @media screen and (max-width:380px){
 
@@ -999,52 +891,18 @@ footer{
         padding:7px 8px;
     }
 
-    .verification-card{
-        width:calc(100% - 12px);
-    }
 
-    .verification-body{
-        padding:18px 8px;
-    }
+    /*
+       CARTE DE VERIFICATION
+       AUCUNE MODIFICATION RESPONSIVE
+    */
 
-    .verification-header h2{
-        font-size:21px;
-    }
 
-    .verification-card h2{
-        font-size:23px;
-    }
-
-    .verification-text{
-        font-size:14px;
-    }
-
-    .code-input{
-        width:calc((100vw - 65px) / 6);
-        height:44px;
-        font-size:17px;
-    }
-
-    .separator{
-        font-size:19px;
-    }
-
-    .verification-card button{
-        width:130px;
-        height:46px;
-        font-size:16px;
-    }
+    /* FOOTER */
 
     .verification-footer{
         margin-top:5px !important;
         padding:20px 10px !important;
     }
 
-    .footer-text{
-        font-size:11px;
-    }
-
-    .verification-footer p{
-        font-size:11px;
-    }
 }
