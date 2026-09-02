@@ -1,851 +1,1050 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    color:#3d2156;
+    overflow-x:hidden;
+    display:flex;
+    flex-direction:column;
+    padding-top:110px;
+}
+
+/* PAGE D'ACCUEIL */
+
+.home-page{
+    background:#ffffff;
+}
+
+/* PAGE VERIFICATION */
+
+.verification-page{
+    background:#eef2f5;
+}
+
+.verification-page .background-shape{
+    display:none;
+}
+
+/* FORMES D'ARRIERE PLAN */
+
+.background-shape{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:.35;
+    z-index:-1;
+}
+
+.shape1{
+    width:320px;
+    height:320px;
+    background:#ff6ec7;
+    top:-100px;
+    left:-80px;
+}
+
+.shape2{
+    width:380px;
+    height:380px;
+    background:#8a5cff;
+    bottom:-120px;
+    right:-120px;
 }
 
 
-body {
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
-    color: #3d2156;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    padding-top: 80px;
+/* TOPBAR */
+
+.topbar{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:110px;
+
+    background:#23294D;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 35px;
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.18);
+
+    box-sizing:border-box;
 }
 
 
-.home-page {
-    background: #ffffff;
+.mybeauty-brand{
+    position:absolute;
+    top:25px;
+    left:30px;
+    z-index:10;
 }
 
-.verification-page {
-    background: #eef2f5;
+.mybeauty-name{
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:46px;
+    font-weight:800;
+    line-height:1;
+    letter-spacing:-2px;
+    color:#f00078;
 }
 
-.verification-page .background-shape {
-    display: none;
-}
-
-
-.background-shape {
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(70px);
-    opacity: .35;
-    z-index: -1;
-}
-
-.shape1 {
-    width: 320px;
-    height: 320px;
-    background: #ff6ec7;
-    top: -100px;
-    left: -80px;
-}
-
-.shape2 {
-    width: 380px;
-    height: 380px;
-    background: #8a5cff;
-    bottom: -120px;
-    right: -120px;
+.mybeauty-tagline{
+    margin-top:6px;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:17px;
+    font-weight:400;
+    color:#aeb9d6;
+    line-height:1.2;
 }
 
 
-/* =========================
-   TOPBAR
-========================= */
+/* TEXTE HAUT GAUCHE + DROITE */
 
-.topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: #23294D;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 35px;
-    z-index: 1000;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .18);
+.topbar{
+    display:flex;
+    align-items:center;
+}
+
+.contact-btn{
+    margin-left:auto;
+    background:#E60087;
+    color:#ffffff;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    font-family:inherit;
+    font-size:14px;
+    font-weight:500;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    animation:contactGlow 1.5s ease-in-out infinite;
+}
+
+@keyframes contactGlow{
+    0%,100%{
+        box-shadow:0 0 5px rgba(230,0,135,.4);
+        opacity:1;
+    }
+
+    50%{
+        box-shadow:0 0 20px rgba(230,0,135,.9);
+        opacity:.75;
+    }
 }
 
 
-.mybeauty-brand {
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    z-index: 10;
+/* PAGE D'ACCUEIL */
+
+.hero{
+    width:min(950px,92%);
+    margin:0 auto;
+    padding-top:50px;
+    text-align:center;
 }
 
-.mybeauty-name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 46px;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -2px;
-    color: #f00078;
+.hero h1{
+    font-size:48px;
+    font-weight:700;
+    line-height:1.2;
+    margin:0 0 20px;
+    text-align:center;
+    color:#2A3475;
 }
 
-.mybeauty-tagline {
-    margin-top: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    color: #f3ecefd5;
-    line-height: 1.2;
+.hero h2{
+    font-size:72px;
+    margin-bottom:25px;
+    color:#2A3475;
 }
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+.hero-description{
+    max-width:800px;
+    margin:0 auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#e60087;
 }
 
-.logo-brand {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
+.hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    margin-top:50px;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
 }
 
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-    width: min(950px, 92%);
-    margin: 0 auto;
-    padding-top: 170px;
-    text-align: center;
+.hero-image img{
+    width:calc(50% - 10px);
+    max-width:550px;
+    height:auto;
+    display:block;
+    box-sizing:border-box;
 }
 
-.hero h2 {
-    font-size: 52px;
-    margin-bottom: 25px;
+.main-button{
+    display:inline-block;
+    margin-top:50px;
+    text-decoration:none;
+    padding:22px 70px;
+    border-radius:60px;
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    background:linear-gradient(135deg,#FF2C97,#8E44FF);
+    transition:.35s;
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
 }
 
-.hero-description {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 22px;
-    line-height: 1.8;
-    color: #6d5b7c;
+.main-button:hover{
+    transform:translateY(-5px);
 }
 
-.main-button {
-    display: inline-block;
-    margin-top: 50px;
-    text-decoration: none;
-    padding: 22px 70px;
-    border-radius: 60px;
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    background: linear-gradient(135deg, #FF2C97, #8E44FF);
-    transition: .35s;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
-}
-
-.main-button:hover {
-    transform: translateY(-5px);
-}
-
-.hero-info {
-    margin-top: 70px;
-    font-size: 26px;
-    line-height: 1.8;
-    color: #6d5b7c;
+.hero-info{
+    margin-top:70px;
+    font-size:26px;
+    line-height:1.8;
+    color:#2A3475;
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER PAGE D'ACCUEIL */
 
-footer {
-    text-align: center;
-    padding: 15px;
-    color: #ec1ca0;
+footer{
+    background:#2A3475;
+    text-align:center;
+    padding:40px 20px 25px;
+}
+
+.social-footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+    margin-bottom:25px;
+}
+
+.social-footer a{
+    width:76px;
+    height:76px;
+    border-radius:50%;
+    background:#EDEFEB;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#2A3475;
+    text-decoration:none;
+    font-size:40px;
+
+    transition:.25s ease;
+}
+
+.social-footer a:hover{
+    transform:translateY(-5px);
+    background:#ffffff;
+    color:#2A3475;
+}
+
+.copyright{
+    margin:0;
+    color:#ffffff;
+    font-size:14px;
 }
 
 
-/* =========================
-   FOOTER PAGE D'ACCUEIL
-========================= */
+/* PAGE DE VERIFICATION */
 
-.home-page footer {
-    padding: 25px 15px 20px;
-    color: #ec1ca0;
+.verification-card{
+    width:470px;
+    max-width:calc(100% - 30px);
+
+    margin:10px auto;
+
+    background:#ffffff;
+    border-radius:6px;
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.verification-header{
+    padding:10px 25px;
+    border-bottom:1px solid #e5e5e5;
+    background:#ffffff;
+}
+
+.verification-header h2{
+    margin:0;
+    text-align:center;
+    font-size:30px;
+    font-weight:500;
+    color:#22396f;
+    line-height:1.3;
+}
+
+.verification-body{
+    padding:25px 35px;
 }
 
 
-/* =========================
-   VERIFICATION CARD
-========================= */
+/* TITRE */
 
-.verification-card {
-    width: 440px;
-    max-width: 92%;
-    margin: 45px auto 35px;
-    background: #ffffff;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, .15);
-}
-
-.verification-header {
-    padding: 10px 20px;
-    border-bottom: 1px solid #e5e5e5;
-    background: #ffffff;
-}
-
-.verification-header h2 {
-    margin: 8px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    color: #22396f;
-    line-height: 1.3;
-}
-
-.verification-body {
-    padding: 20px 25px 25px;
-}
-
-.shield-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 15px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #FCE8F4;
-    font-size: 35px;
-}
-
-.verification-card h2 {
-    font-size: 26px;
-    color: #23294D;
-    margin-bottom: 12px;
-}
-
-.verification-text {
-    max-width: 600px;
-    margin: 0 auto 20px;
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
+.verification-card h2{
+    font-size:40px;
+    color:#23294D;
+    margin-bottom:20px;
 }
 
 
-/* =========================
-   VERIFICATION FORM
-========================= */
+/* TEXTE */
 
-.code-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    width: 100%;
-    margin: -15px auto 5px;
-}
-
-#verificationForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-    /* Longueur augmentée sans modifier la largeur */
-    padding-top: 100px;
-    padding-bottom: 35px;
-
-    /* Même espace en haut et en bas */
-    margin-top: 0;
-    margin-bottom: 22px;
-}
-
-.recaptcha-container {
-    display: flex;
-    justify-content: center;
-    transform: scale(.76);
-    transform-origin: center;
-    margin: 4px 0;
-    height: 58px;
-}
-
-#verifyBtn {
-    margin-top: 6px;
-}
-
-.code-input {
-    width: 68px;
-    height: 42px;
-    border: 1px solid #bdbdbd;
-    border-right: none;
-    text-align: center;
-    font-size: 21px;
-    font-weight: 500;
-    color: #333;
-    outline: none;
-    background: #fff;
-}
-
-.code-input:first-child {
-    border-radius: 4px 0 0 4px;
-}
-
-.code-input:last-child {
-    border-right: 1px solid #d5d5d5;
-    border-radius: 0 4px 4px 0;
-}
-
-.code-input:focus {
-    border: 1px solid #4a90ff;
-    z-index: 10;
-}
-
-.separator {
-    font-size: 30px;
-    font-weight: bold;
-    color: #8E44FF;
-}
-
-.verification-card button {
-    width: 120px;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-    background: #ec1c7d;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 5px;
-    transition: .25s;
-}
-
-.verification-card button:hover {
-    background: #d81870;
-}
-
-#result {
-    min-height: 0;
-    margin-top: 5px;
-}
-
-.success {
-    color: #28a745;
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.error {
-    color: #D62828;
-    font-size: 17px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.help-text {
-    margin-top: 18px;
-    color: #777;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.back-button {
-    display: inline-block;
-    margin-top: 12px;
-    color: #8E44FF;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.back-button:hover {
-    text-decoration: underline;
+.verification-text{
+    max-width:600px;
+    margin:0 auto 40px;
+    font-size:20px;
+    color:#666;
+    line-height:1.8;
 }
 
 
-/* =========================
-   BOUTON CONSULTER
-========================= */
+/* ZONE DE SAISIE DU CODE */
 
-.btn-consulter {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 22px 70px;
-    border-radius: 60px;
-    background: linear-gradient(135deg, #FF2C97, #8E44FF);
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 700;
-    transition: .35s;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
+.code-group{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0;
+    width:100%;
+    margin:20px auto;
 }
 
-.btn-consulter:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, .25);
+#verificationForm{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
 }
+
+.recaptcha-container{
+    display:flex;
+    justify-content:center;
+    max-width:100%;
+    margin:15px 0;
+}
+
+#verifyBtn{
+    margin-top:8px;
+}
+
+.code-input{
+    width:75px;
+    height:52px;
+
+    border:1px solid #bdbdbd;
+    border-right:none;
+
+    text-align:center;
+    font-size:22px;
+    font-weight:500;
+
+    color:#333;
+
+    outline:none;
+    background:#fff;
+}
+
+.code-input:first-child{
+    border-radius:4px 0 0 4px;
+}
+
+.code-input:last-child{
+    border-right:1px solid #d5d5d5;
+    border-radius:0 4px 4px 0;
+}
+
+.code-input:focus{
+    border:1px solid #4a90ff;
+    z-index:10;
+}
+
+
+.separator{
+    font-size:34px;
+    font-weight:bold;
+    color:#8E44FF;
+}
+
+
+/* BOUTON */
+
+.verification-card button{
+    width:150px;
+    height:52px;
+
+    border:none;
+    border-radius:4px;
+
+    background:#FF2C97;
+    color:#fff;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    margin-top:18px;
+
+    transition:.25s;
+}
+
+.verification-card button:hover{
+    background:#FF2C97;
+}
+
+
+/* MESSAGE */
+
+#result{
+    min-height:0;
+    margin-top:10px;
+}
+
+.success{
+    color:#28a745;
+    font-size:20px;
+    font-weight:700;
+    text-align:center;
+    margin-top:20px;
+}
+
+.error{
+    color:#D62828;
+    font-size:20px;
+    font-weight:700;
+    text-align:center;
+    margin-top:20px;
+}
+
+
+/* TEXTE D'AIDE */
+
+.help-text{
+    margin-top:40px;
+    color:#777;
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+/* RETOUR */
+
+.back-button{
+    display:inline-block;
+    margin-top:30px;
+    color:#8E44FF;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.back-button:hover{
+    text-decoration:underline;
+}
+
+
+/* BOUTON CONSULTER */
+
+.btn-consulter{
+    display:inline-block;
+
+    margin-top:50px;
+
+    padding:22px 70px;
+
+    border-radius:60px;
+
+    background:#2A3475;
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:30px;
+    font-weight:700;
+
+    transition:.35s;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+    animation:verifyGlow 1.5s ease-in-out infinite;
+}
+
+.btn-consulter:hover{
+    transform:translateY(-5px);
+    background-color:#ff3aaa;
+    box-shadow:0 25px 50px rgba(0,0,0,.25);
+}
+
+@keyframes verifyGlow{
+    0%,100%{
+        box-shadow:0 0 5px rgba(230,0,135,.3);
+    }
+
+    50%{
+        box-shadow:0 0 20px rgba(230,0,135,.9);
+    }
+}
+
+
+/* FOOTER PAGE VERIFICATION */
+
+.verification-footer{
+    margin-top:10px;
+
+    padding:30px 20px;
+
+    background:#eef2f5;
+
+    border-top:1px solid #d8d8d8;
+
+    text-align:center;
+
+    width:100%;
+}
+
+.footer-text{
+    color:#E60087;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.footer-text span{
+    color:#999;
+    margin:0 8px;
+}
+
+.verification-footer p{
+    margin:0;
+    color:#E60087;
+    font-size:14px;
+}
+
+
+/* CONTACT */
 
 .contact-text,
 .contact-text:visited,
 .contact-text:hover,
-.contact-text:active {
-    text-decoration: none !important;
-    color: #ffffff !important;
+.contact-text:active{
+    text-decoration:none !important;
+    color:#ffffff !important;
+}
+
+.refund-link{
+    display:none;
 }
 
 
-/* =========================
-   VERIFICATION FOOTER
-   ESPACE REDUIT UNIQUEMENT
-========================= */
+/* TABLET */
 
-.verification-footer {
-    margin-top: 80px;
-    padding: 30px 6px;
-    background: #eef2f5;
-    border-top: 1px solid #d8d8d8;
-    text-align: center;
-}
+@media (max-width:900px){
 
-.verification-footer .footer-top {
-    color: #ec1ca0;
-    font-size: 10px;
-    line-height: 1.2;
-    margin: 0;
-}
-
-.verification-footer .footer-bottom {
-    color: #ec1ca0;
-    font-size: 10px;
-    line-height: 1.2;
-    margin: 0;
-}
-
-
-/* Anciennes règles conservées */
-.footer-text {
-    color: #ec1ca0;
-    font-size: 10px;
-    margin-bottom: 2px;
-}
-
-.footer-text span {
-    color: #ec1ca0;
-    margin: 0 4px;
-}
-
-.verification-footer p {
-    margin: 0;
-    color: #ec1ca0;
-    font-size: 10px;
-}
-
-
-/* =========================
-   TABLET / 900px
-========================= */
-
-@media (max-width: 900px) {
-
-    .hero h2 {
-        font-size: 42px;
+    .hero h2{
+        font-size:42px;
     }
 
-    .hero-description {
-        font-size: 19px;
+    .hero-description{
+        font-size:19px;
     }
 
-    .hero-info {
-        font-size: 21px;
-    }
-
-    .verification-card {
-        width: 415px;
-        max-width: 88%;
-        margin: 35px auto 30px;
-    }
-
-    #verificationForm {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding-top: 25px;
-        padding-bottom: 35px;
-    }
-
-    .verification-page .verification-footer {
-        padding: 2px 6px;
-    }
-
-    .verification-page .verification-footer .footer-top,
-    .verification-page .verification-footer .footer-bottom {
-        font-size: 10px;
+    .hero-info{
+        font-size:21px;
     }
 }
 
 
-/* =========================
-   TABLET / 768px
-========================= */
+/* TABLET / PETITS ECRANS */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    .topbar {
-        height: 80px;
-        padding: 0 20px;
+    .topbar{
+        height:90px;
+        padding:0 20px;
     }
 
-    body {
-        padding-top: 80px;
+    .mybeauty-brand{
+        top:18px;
+        left:20px;
     }
 
-    .logo-brand {
-        width: 50px;
-        height: 50px;
+    .mybeauty-name{
+        font-size:34px;
+        line-height:1;
     }
 
-    .brand span,
-    .contact-text {
-        font-size: 20px;
+    .mybeauty-tagline{
+        font-size:13px;
+        margin-top:4px;
     }
 
-    .hero {
-        padding-top: 50px;
+    body{
+        padding-top:90px;
     }
 
-    .hero h2 {
-        font-size: 34px;
+    .hero{
+        padding-top:40px;
     }
 
-    .hero-description {
-        font-size: 17px;
-        line-height: 1.5;
+    .hero h1{
+        font-size:38px;
     }
 
-    .hero-info {
-        font-size: 18px;
+    .hero h2{
+        font-size:34px;
     }
 
-    .main-button {
-        width: 100%;
-        max-width: 340px;
-        padding: 18px;
-        font-size: 22px;
+    .hero-description{
+        font-size:17px;
     }
 
-    .verification-card {
-        width: 395px;
-        max-width: 90%;
-        margin: 30px auto;
-        padding: 8px;
+    .hero-info{
+        font-size:18px;
     }
 
-    .verification-body {
-        padding: 15px 15px 20px;
+    .main-button{
+        width:100%;
+        max-width:340px;
+        padding:18px;
+        font-size:22px;
     }
 
-    .verification-card h2 {
-        font-size: 20px;
+    .verification-card{
+        width:95%;
+        max-width:470px;
+        margin:10px auto;
     }
 
-    .verification-text {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 12px;
+    .verification-body{
+        padding:25px 20px;
     }
 
-    .shield-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 30px;
-        margin-bottom: 10px;
+    .verification-card h2{
+        font-size:30px;
     }
 
-    .code-group {
-        gap: 4px;
-        margin: 8px auto;
+    .verification-text{
+        font-size:17px;
     }
 
-    .code-input {
-        width: 62px;
-        height: 44px;
-        font-size: 20px;
+    .code-group{
+        gap:5px;
     }
 
-    .separator {
-        font-size: 24px;
+    .code-input{
+        width:70px;
+        height:55px;
+        font-size:22px;
     }
 
-    .verification-card button {
-        width: 110px;
-        height: 37px;
-        font-size: 15px;
-        margin-top: 3px;
+    .separator{
+        font-size:26px;
     }
 
-    .recaptcha-container {
-        transform: scale(.68);
-        height: 52px;
+    .verification-card button{
+        font-size:20px;
     }
 
-    .help-text {
-        margin-top: 10px;
-        font-size: 14px;
-    }
-
-    .back-button {
-        margin-top: 7px;
-    }
-
-    /* Même espacement haut/bas */
-    #verificationForm {
-        margin-top: 18px;
-        margin-bottom: 18px;
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-
-    /* Footer reste petit en hauteur */
-    .verification-page .verification-footer {
-        padding: 2px 5px;
-    }
-
-    .verification-page .verification-footer .footer-top,
-    .verification-page .verification-footer .footer-bottom {
-        font-size: 10px;
-    }
-
-    /* Bouton consulter réduit */
-    .btn-consulter {
-        margin-top: 25px;
-        padding: 15px 35px;
-        font-size: 22px;
-        border-radius: 45px;
+    .verification-footer{
+        margin-top:10px;
+        padding:25px 15px;
     }
 }
 
 
-/* =========================
-   MOBILE / 600px
-========================= */
+/* MOBILE */
 
-@media (max-width: 600px) {
+@media screen and (max-width:600px){
 
-    .topbar {
-        height: 75px;
-        padding: 0 10px;
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
     }
 
-    body {
-        padding-top: 75px;
+    body{
+        padding-top:82px;
     }
 
-    /* Positionnement du logo/nom comme sur PC,
-       mais adapté à la petite largeur */
-    .mybeauty-brand {
-        top: 8px;
-        left: 15px;
+    .topbar{
+        height:82px;
+        padding:0 8px;
     }
 
-    .mybeauty-name {
-        font-size: 32px;
-        letter-spacing: -1.5px;
+    .mybeauty-brand{
+        top:15px;
+        left:16px;
     }
 
-    .mybeauty-tagline {
-        margin-top: 3px;
-        font-size: 9px;
+    .mybeauty-name{
+        font-size:30px;
+        letter-spacing:-1px;
     }
 
-    .brand {
-        gap: 8px;
-        max-width: 60%;
+    .mybeauty-tagline{
+        font-size:12px;
+        margin-top:4px;
     }
 
-    .logo-brand {
-        width: 42px;
-        height: 42px;
+
+    /* CONTACT */
+
+    .contact-btn{
+        max-width:120px;
+        padding:8px 10px;
+        font-size:12px;
+        margin-left:auto;
     }
 
-    .brand span {
-        font-size: 17px !important;
-        white-space: normal;
-        line-height: 1.2;
+
+    /* HERO */
+
+    .hero{
+        width:100%;
+        max-width:100%;
+        padding:30px 15px 0;
     }
 
-    .contact-text {
-        display: block !important;
-        color: #ffffff !important;
-        font-size: 17px !important;
-        font-weight: 700;
-        white-space: nowrap;
-        position: relative;
-        z-index: 2000;
+    .hero h1{
+        font-size:32px;
+        line-height:1.2;
+        margin:0 15px 15px;
+        text-align:center;
     }
 
-    .refund-link {
-        display: none;
+    .hero h2{
+        font-size:28px;
     }
 
-    .verification-card {
-        width: 375px;
-        max-width: 94%;
-        margin: 25px auto;
-        padding: 5px;
+    .hero-description{
+        font-size:16px;
+        line-height:1.6;
     }
 
-    .verification-body {
-        padding: 10px 10px 18px;
+    .hero-info{
+        font-size:16px;
+        line-height:1.6;
     }
 
-    .verification-header {
-        padding: 5px 10px;
+
+    /* IMAGES */
+
+    .hero-image{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        gap:15px !important;
+
+        width:100% !important;
+        max-width:100% !important;
+
+        padding:0 15px !important;
+
+        margin-left:0 !important;
+        margin-right:0 !important;
     }
 
-    .verification-header h2 {
-        margin: 5px;
-        font-size: 15px;
+    .hero-image img{
+        display:block !important;
+
+        width:90% !important;
+        max-width:350px !important;
+
+        height:auto !important;
+
+        margin:0 auto !important;
     }
 
-    .verification-text {
-        font-size: 14px;
-        margin-bottom: 8px;
+
+    /* BOUTON CONSULTER */
+
+    .btn-consulter{
+        display:inline-flex !important;
+
+        align-items:center;
+        justify-content:center;
+
+        width:220px !important;
+        min-width:220px !important;
+        max-width:calc(100vw - 30px) !important;
+
+        height:52px !important;
+
+        padding:12px 20px !important;
+
+        font-size:16px !important;
+
+        margin-left:auto !important;
+        margin-right:auto !important;
+
+        box-sizing:border-box !important;
+
+        border-radius:10px !important;
     }
 
-    .code-input {
-        width: 58px;
-        height: 42px;
+
+    /* CARTE DE VERIFICATION */
+
+    .verification-card{
+        width:calc(100% - 20px);
+        max-width:470px;
+
+        margin:10px auto;
+
+        border-radius:6px;
     }
 
-    .recaptcha-container {
-        transform: scale(.60);
-        height: 46px;
+    .verification-header{
+        padding:10px 15px;
     }
 
-    /* Même espace en haut et en bas */
-    #verificationForm {
-        margin-top: 16px;
-        margin-bottom: 16px;
-        padding-top: 18px;
-        padding-bottom: 28px;
+    .verification-header h2{
+        font-size:24px;
+        line-height:1.3;
     }
 
-    /* Footer réduit en hauteur, texte conservé à 10px */
-    .verification-page .verification-footer {
-        padding: 2px 4px;
+    .verification-body{
+        padding:20px 12px;
     }
 
-    .verification-page .verification-footer .footer-top,
-    .verification-page .verification-footer .footer-bottom {
-        font-size: 10px;
-        line-height: 1.2;
+    .verification-card h2{
+        font-size:26px;
+        margin-bottom:15px;
     }
 
-    /* Bouton consulter réduit */
-    .btn-consulter {
-        margin-top: 20px;
-        padding: 12px 28px;
-        font-size: 18px;
-        border-radius: 40px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+    .verification-text{
+        width:100%;
+        max-width:100%;
+
+        font-size:15px;
+        line-height:1.6;
+
+        margin:0 auto 25px;
+    }
+
+
+    /* CODE */
+
+    .code-group{
+        width:100%;
+        gap:2px;
+        margin:15px auto;
+    }
+
+    .code-input{
+        width:calc((100vw - 85px) / 6);
+        max-width:55px;
+        min-width:35px;
+
+        height:48px;
+
+        font-size:19px;
+    }
+
+    .separator{
+        font-size:22px;
+        padding:0 1px;
+    }
+
+
+    /* RECAPTCHA */
+
+    .recaptcha-container{
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
+        margin:12px 0;
+    }
+
+
+    /* BUTTON */
+
+    .verification-card button{
+        width:140px;
+        height:48px;
+        font-size:17px;
+        margin-top:12px;
+    }
+
+
+    /* HELP */
+
+    .help-text{
+        margin-top:25px;
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .back-button{
+        margin-top:20px;
+    }
+
+
+    /* FOOTER VERIFICATION */
+
+    .verification-footer{
+        width:100% !important;
+        max-width:100% !important;
+
+        margin-top:5px !important;
+
+        padding:22px 12px !important;
+
+        background:#eef2f5 !important;
+
+        box-sizing:border-box !important;
+    }
+
+    .footer-text{
+        color:#E60087;
+        font-size:12px;
+        line-height:1.7;
+        margin-bottom:10px;
+    }
+
+    .footer-text span{
+        color:#999;
+        margin:0 4px;
+    }
+
+    .verification-footer p{
+        color:#E60087;
+        font-size:12px;
+        line-height:1.5;
+    }
+
+
+    /* FOOTER ACCUEIL */
+
+    footer{
+        width:100% !important;
+        max-width:100% !important;
+
+        padding:30px 15px 20px;
+    }
+
+    .social-footer{
+        width:100%;
+        max-width:100%;
+
+        display:flex;
+
+        justify-content:center;
+        align-items:center;
+
+        gap:8px;
+
+        flex-wrap:nowrap;
+
+        box-sizing:border-box;
+    }
+
+    .social-footer a{
+        width:42px;
+        height:42px;
+
+        flex:0 0 42px;
+
+        font-size:21px;
     }
 }
 
 
-/* =========================
-   MOBILE / 480px
-========================= */
+/* TRES PETITS ECRANS */
 
-@media (max-width: 480px) {
+@media screen and (max-width:380px){
 
-    .hero h2 {
-        font-size: 28px;
+    .mybeauty-name{
+        font-size:27px;
     }
 
-    .hero-description {
-        font-size: 16px;
+    .mybeauty-tagline{
+        font-size:10px;
     }
 
-    .hero-info {
-        font-size: 16px;
+    .contact-btn{
+        font-size:11px;
+        padding:7px 8px;
     }
 
-    .code-input {
-        width: 54px;
-        height: 40px;
-        font-size: 18px;
+    .verification-card{
+        width:calc(100% - 12px);
     }
 
-    .separator {
-        font-size: 20px;
+    .verification-body{
+        padding:18px 8px;
     }
 
-    .verification-card {
-        width: 350px;
-        max-width: 95%;
-        margin-top: 22px;
-        margin-bottom: 22px;
+    .verification-header h2{
+        font-size:21px;
     }
 
-    .verification-card button {
-        width: 105px;
-        height: 35px;
-        font-size: 14px;
+    .verification-card h2{
+        font-size:23px;
     }
 
-    /* Même espacement haut/bas */
-    #verificationForm {
-        margin-top: 105px;
-        margin-bottom: 15px;
-        padding-top: 105px;
-        padding-bottom: 25px;
+    .verification-text{
+        font-size:14px;
     }
 
-    /* Footer petit en hauteur, texte conservé */
-    .verification-page .verification-footer {
-        padding: 2px 4px;
+    .code-input{
+        width:calc((100vw - 65px) / 6);
+        height:44px;
+        font-size:17px;
     }
 
-    .verification-page .verification-footer .footer-top,
-    .verification-page .verification-footer .footer-bottom {
-        font-size: 10px;
-        line-height: 1.2;
+    .separator{
+        font-size:19px;
     }
 
-    /* Bouton consulter encore mieux adapté */
-    .btn-consulter {
-        margin-top: 18px;
-        padding: 11px 25px;
-        font-size: 17px;
-        border-radius: 35px;
+    .verification-card button{
+        width:130px;
+        height:46px;
+        font-size:16px;
     }
 
-    /* Marque MyBeauty adaptée au très petit écran */
-    .mybeauty-brand {
-        top: 8px;
-        left: 12px;
+    .verification-footer{
+        margin-top:5px !important;
+        padding:20px 10px !important;
     }
 
-    .mybeauty-name {
-        font-size: 30px;
-        letter-spacing: -1.2px;
+    .footer-text{
+        font-size:11px;
     }
 
-    .mybeauty-tagline {
-        font-size: 8px;
-        margin-top: 2px;
+    .verification-footer p{
+        font-size:11px;
     }
 }

