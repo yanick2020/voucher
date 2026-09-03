@@ -430,16 +430,16 @@ footer{
 
 .success{
     color:#28a745;
-    font-size:20px;
-    font-weight:700;
+    font-size:15px;
+    font-weight:400;
     text-align:center;
     margin-top:20px;
 }
 
 .error{
     color:#D62828;
-    font-size:20px;
-    font-weight:700;
+    font-size:15px;
+    font-weight:400;
     text-align:center;
     margin-top:20px;
 }
