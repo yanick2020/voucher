@@ -652,6 +652,18 @@ footer{
     body{
         padding-top:82px;
     }
+    .verification-card{
+    width:calc(100% - 30px) !important;
+    max-width:calc(100% - 30px) !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+}
+
+.verification-body{
+    padding:0 15px !important;
+    width:100%;
+    box-sizing:border-box;
+}
 
     .topbar{
         height:82px;
