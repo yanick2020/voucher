@@ -652,6 +652,7 @@ footer{
     body{
         padding-top:82px;
     }
+    
     .verification-card{
     width:calc(100% - 30px) !important;
     max-width:calc(100% - 30px) !important;
